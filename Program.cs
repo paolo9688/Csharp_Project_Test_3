@@ -24,15 +24,17 @@ switch (product[0])
         break;
 }
 
-if (product[1] == "BL")
+switch (product[1])
 {
-    color = "Black";
-} else if (product[1] == "MN")
-{
-    color = "Maroon";
-} else
-{
-    color = "White";
+    case "BL":
+        color = "Black";
+        break;
+    case "MN":
+        color = "Maroon";
+        break;
+    default:
+        color = "White";
+        break;
 }
 
 if (product[2] == "S")
