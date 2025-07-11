@@ -37,18 +37,20 @@ switch (product[1])
         break;
 }
 
-if (product[2] == "S")
+switch (product[2])
 {
-    size = "Small";
-} else if (product[2] == "M")
-{
-    size = "Medium";
-} else if (product[2] == "L")
-{
-    size = "Large";
-} else
-{
-    size = "One Size Fits All";
+    case "S":
+        size = "Small";
+        break;
+    case "M":
+        size = "Medium";
+        break;
+    case "L":
+        size = "Large";
+        break;
+    default:
+        size = "One Size Fits All";
+        break;
 }
 
 Console.WriteLine($"Product: {size} {color} {type}");
